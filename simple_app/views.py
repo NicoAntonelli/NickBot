@@ -1,9 +1,6 @@
-from flask import Flask
-from flask import render_template
 from datetime import datetime
-import re
-
-app = Flask(__name__)
+from flask import Flask, render_template
+from . import app
 
 @app.route("/")
 def home():
@@ -17,7 +14,7 @@ def about():
 def contact():
     return render_template("contact.html")
 
-@app.route("/hello")
+@app.route("/hello/")
 @app.route("/hello/<name>")
 def hello_there(name = None):
     return render_template(
