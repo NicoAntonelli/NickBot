@@ -31,6 +31,11 @@ def get_data():
     return app.send_static_file("data.json")
 
 
+@app.route("/api/bot_info")
+def bot_info():
+    return render_template("bot.html")
+
+
 # SMS / WhatsApp Bot
 @app.route("/api/bot", methods=["POST"])
 def bot():
