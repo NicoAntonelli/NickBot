@@ -1,9 +1,7 @@
 from datetime import datetime
 from flask import Flask, render_template
-
-
-from . import app
 from simple_app.bot_logic import bot_logic
+from . import app
 
 
 @app.route("/")
@@ -33,12 +31,12 @@ def get_data():
     return app.send_static_file("data.json")
 
 
-@app.route("/api/bot_info")
+@app.route("/bot_info")
 def bot_info():
     return render_template("bot.html")
 
 
 # SMS / WhatsApp Bot
-@app.route("/api/bot", methods=["POST"])
+@app.route("/bot", methods=["POST"])
 def bot():
     return bot_logic()
