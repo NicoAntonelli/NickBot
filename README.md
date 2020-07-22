@@ -1,4 +1,4 @@
-# PruebaBot
+# NickBot
 Bot development and Flask testing with Python
 
 ## Get Started
@@ -17,7 +17,7 @@ Use the following steps from a terminal:
 2 - Navigate into the simple_app folder (`cd ...`), then launch the program using `python3 -m flask run` (Linux/macOS) or `python -m flask run` (Windows). The commands `python` and `py` are equivalent.
 
 ## Other Important Commands
-For starting a new virtual environment in VSC, use `py -m venv env`, where "venv" is the (customizable) name of de environment.
+For starting a new virtual environment in VSC, use `py -m venv env`, where "env" is the (customizable) name of de environment.
 
 For updating the requirements.txt file, use `pip freeze > requirements.txt`.
 
